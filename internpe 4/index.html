@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Connect Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Four Connect Game</h1>
+        <div id="startGameContainer">
+            <button class="start-game-btn" id="startGameBtn">Start Game</button>
+        </div>
+        <div id="gameContainer" class="hidden">
+            <div id="score">
+                <table class="points-table">
+                    <thead>
+                        <tr>
+                            <th>Player 1 Points</th>
+                            <th>Player 2 Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="player1Points">0</td>
+                            <td id="player2Points">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="board" class="board"></div>
+            <div class="message" id="message">Click "Start Game" to begin</div>
+            <button class="restart-btn hidden" id="restartBtn">Restart Game</button>
+            <button class="start-game-btn" id="goBackBtn">Go Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
